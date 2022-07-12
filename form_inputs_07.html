@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form inputs</title>
+</head>
+<body>
+    <form action="process.php">
+    <!-- Text -->
+    <div>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" placeholder="Enter your name here" name="name" id="name">
+    </div>
+    <!-- Email -->
+    <div>
+        <label for="email">Email</label>
+        <br>
+        <input type="email">
+    </div>
+    <!-- Text Area -->
+    <div>
+        <label for="feedback">Feedback</label>
+        <br>
+        <textarea name="feedback" id="feedback" cols="20" rows="5"></textarea>
+    </div>
+    <!-- Number -->
+    <div>
+        <label for="number">Age</label>
+        <br>
+        <input type="number">
+    </div>
+    <br>
+    <!-- Select -->
+    <div>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female"selected>Female</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+    <br>
+    <!-- Date -->
+    <div>
+        <label for="date">Date of Birth</label>
+        <input type="date">
+    </div>
+    <br>
+    <!-- Review button -->
+    <div>
+        <label for="membership">Membership:</label>
+        <input type="radio" id="membership" name="membership" value="membership">silver
+        <input type="radio" id="membership" name="membership" value="membership">gold
+        <input type="radio" id="membership" name="membership" value="membership">plat
+    </div>
+    <br>
+    <!-- Checkbox -->
+    <div>
+        <label for="fav">I like....</label>
+        <input type="checkbox" id="fav" name="fav" value="fav">Bike
+        <input type="checkbox" id="fav" name="fav" value="fav">Car
+        <input type="checkbox" id="fav" name="fav" value="fav">Boat
+    </div>
+    <br>
+    <!-- Submit Button -->
+    <div>
+        <button type="submit">Submit</button>
+        <input type="submit" value="submit">
+
+        <button type="reset">Reset</button>
+    </div>
+
+</form>
+</body>
+</html>
+
+<!-- block label element
+inline level element -->
