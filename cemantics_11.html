@@ -4,8 +4,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Semantics</title>
+        <style>
+            li {
+                display: inline-block;
+            }
+            li a {
+                text-decoration: none;
+                padding-right: 150px;
+            }
+            #main-nav {
+                text-align: center;
+                background-color: cyan;
+                border: 10px solid cyan;
+                font-size: 30px;
+            }
+            .car {
+                text-align: center;
+                background: thistle;
+                border: 10px solid thistle;
+                font-size: 50px;
+            }
+            #main {
+                text-align: center;
+            }
+            #welcome {
+                background-image: url(/pomegranate.jpg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+
+                background: url(/pomegranate.jpg) no-repeat center center/cover;
+
+                height: 1000px;
+                color: seashell;
+                margin: 0 auto;
+                font-size: 50px;
+            }
+            #blog {
+                background-image: url(/img01.jpg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+
+                background: url(/img01.jpg) no-repeat center center/cover;
+
+                height: 1000px;
+                color: seashell;
+                margin: 0 auto;
+                font-size: 50px;
+            }
+            .text-center {
+                text-align: center;
+                background: rgb(82, 226, 226);
+            }
+            #welcome h2 {
+                padding-top: 320px;
+            }
+            
+        </style>
     </head>
     <body>
+        <!-- sidebar on the right side -->
+        <aside id="sidebar" class="card">
+            <h3>Navigation</h3>
+            <!-- Navigation menu -->
+                <nav>
+                    <ul id="main-nav">
+                        <li><a href="index.html" class="btn">Home</a></li>
+                        <li><a href="about.html" class="btn">About</a></li>
+                        <li><a href="contact.html" class="btn">Contact</a></li>
+                    </ul>
+                </nav>
+        </aside>
         <!-- Header -->
         <header id="header" class="car">
             <h1>Web App</h1>
@@ -14,11 +84,13 @@
 
         <!-- Main content -->
         <main id="main">
+
             <!-- welcome section -->
             <section id="welcome" class="card">
                 <h2>Lorem ipsum dolor sit.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ducimus.</p>
             </section>
+
             <!-- blog section -->
             <section id="blog">
                 <h2>From our blog</h2>
@@ -33,19 +105,9 @@
                     <p>Lorem ipsum dolor sit amet.</p>
                 </article>
             </section>
+
         </main>
-        <!-- sidebar on the right side -->
-        <aside id="sidebar" class="card">
-            <h3>Navigation</h3>
-            <!-- Navigation menu -->
-                <nav>
-                    <ul id="main-nav">
-                        <li <a href="index.html">Home</a></li>
-                        <li <a href="about.html">About</a></li>
-                        <li <a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-        </aside>
+
         <footer id="footer">
             <p class="text-center">Copyright &copy;2022 </p>
         </footer>
